@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<BorderPane prefHeight="400.0" prefWidth="650.0" xmlns:fx="http://javafx.com/fxml"
+            fx:controller="ni.edu.uam.aplicacionregistro.controller.ConsultaController">
+    <top>
+        <VBox spacing="10.0">
+            <padding>
+                <Insets bottom="10.0" left="15.0" right="15.0" top="15.0"/>
+            </padding>
+            <Label style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Consulta de clientes"/>
+            <Label text="Haga doble clic sobre un cliente para ver el detalle."/>
+        </VBox>
+    </top>
+    <center>
+        <TableView fx:id="tablaClientes" onMouseClicked="#onTablaMouseClicked">
+            <columns>
+                <TableColumn fx:id="colNombre" text="Nombre completo" prefWidth="160.0"/>
+                <TableColumn fx:id="colTipoCliente" text="Tipo de cliente" prefWidth="110.0"/>
+                <TableColumn fx:id="colCiudad" text="Ciudad" prefWidth="110.0"/>
+                <TableColumn fx:id="colFechaNacimiento" text="Fecha de nacimiento" prefWidth="140.0"/>
+                <TableColumn fx:id="colTipoSolicitud" text="Tipo de solicitud" prefWidth="120.0"/>
+            </columns>
+        </TableView>
+    </center>
+    <bottom>
+        <HBox alignment="CENTER" spacing="15.0">
+            <padding>
+                <Insets bottom="15.0" left="15.0" right="15.0" top="15.0"/>
+            </padding>
+            <Button text="Exportar reporte" onAction="#onExportarReporteClick"/>
+            <Button text="Regresar" onAction="#onRegresarClick"/>
+        </HBox>
+    </bottom>
+</BorderPane>
