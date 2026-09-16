@@ -1,4 +1,4 @@
-package ni.edu.uam.aplicacionregistro;
+package ni.edu.uam.aplicacionregistro.controller;
 
 import javafx.event.ActionEvent;
 import javafx.event.Event;
