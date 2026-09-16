@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.VBox?>
 
 <VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="ni.edu.uam.aplicacionregistro.LoginController">
+      fx:controller="ni.edu.uam.aplicacionregistro.controller.LoginController">
     <padding>
         <Insets bottom="30.0" left="30.0" right="30.0" top="30.0"/>
     </padding>

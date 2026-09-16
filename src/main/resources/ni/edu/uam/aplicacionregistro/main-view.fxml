@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="450.0" prefWidth="650.0" xmlns:fx="http://javafx.com/fxml"
+            fx:controller="ni.edu.uam.aplicacionregistro.MainController">
+    <top>
+        <VBox>
+            <MenuBar>
+                <Menu text="Archivo">
+                    <MenuItem text="Cerrar sesión" onAction="#onCerrarSesionClick"/>
+                    <MenuItem text="Salir" onAction="#onMenuSalirClick"/>
+                </Menu>
+                <Menu text="Clientes">
+                    <MenuItem text="Registrar cliente" onAction="#onMenuRegistroClick"/>
+                    <MenuItem text="Consultar clientes" onAction="#onMenuConsultaClick"/>
+                </Menu>
+                <Menu text="Ayuda">
+                    <MenuItem text="Acerca de" onAction="#onVerInfoClick"/>
+                </Menu>
+            </MenuBar>
+            <ToolBar>
+                <Button text="Registrar cliente" onAction="#onToolbarRegistroClick"/>
+                <Button text="Consultar clientes" onAction="#onToolbarConsultaClick"/>
+                <Button text="Cerrar sesión" onAction="#onCerrarSesionClick"/>
+            </ToolBar>
+        </VBox>
+    </top>
+    <center>
+        <VBox alignment="CENTER" spacing="15.0">
+            <padding>
+                <Insets bottom="30.0" left="30.0" right="30.0" top="30.0"/>
+            </padding>
+            <Label style="-fx-font-size: 22px; -fx-font-weight: bold;" text="Sistema de Registro de Clientes"/>
+            <Label fx:id="lblInfo" text="Haga clic derecho aquí para más opciones.">
+                <contextMenu>
+                    <ContextMenu>
+                        <items>
+                            <MenuItem text="Ver información del sistema" onAction="#onVerInfoClick"/>
+                        </items>
+                    </ContextMenu>
+                </contextMenu>
+            </Label>
+        </VBox>
+    </center>
+</BorderPane>
