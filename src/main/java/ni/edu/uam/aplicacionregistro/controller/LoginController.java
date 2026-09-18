@@ -49,7 +49,7 @@ public class LoginController {
         }
 
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("main-view.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/ni/edu/uam/aplicacionregistro/main-view.fxml"));
             Parent root = loader.load();
 
             Stage stagePrincipal = new Stage();
@@ -59,10 +59,11 @@ public class LoginController {
 
             ((Stage) ((Node) event.getSource()).getScene().getWindow()).close();
         } catch (IOException e) {
+            e.printStackTrace();
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Error");
             alert.setHeaderText(null);
-            alert.setContentText("No fue posible abrir la ventana principal.");
+            alert.setContentText("No fue posible abrir la ventana principal: " + e.getMessage());
             alert.showAndWait();
         }
     }

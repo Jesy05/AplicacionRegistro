@@ -20,22 +20,22 @@ public class MainController {
 
     @FXML
     private void onMenuRegistroClick(ActionEvent event) {
-        abrirVentana("registro-view.fxml", "Registro de cliente");
+        abrirVentana("/ni/edu/uam/aplicacionregistro/registro-view.fxml", "Registro de cliente");
     }
 
     @FXML
     private void onToolbarRegistroClick(ActionEvent event) {
-        abrirVentana("registro-view.fxml", "Registro de cliente");
+        abrirVentana("/ni/edu/uam/aplicacionregistro/registro-view.fxml", "Registro de cliente");
     }
 
     @FXML
     private void onMenuConsultaClick(ActionEvent event) {
-        abrirVentana("consulta-view.fxml", "Consulta de clientes");
+        abrirVentana("/ni/edu/uam/aplicacionregistro/consulta-view.fxml", "Consulta de clientes");
     }
 
     @FXML
     private void onToolbarConsultaClick(ActionEvent event) {
-        abrirVentana("consulta-view.fxml", "Consulta de clientes");
+        abrirVentana("/ni/edu/uam/aplicacionregistro/consulta-view.fxml", "Consulta de clientes");
     }
 
     private void abrirVentana(String fxml, String titulo) {
@@ -59,7 +59,7 @@ public class MainController {
     @FXML
     private void onCerrarSesionClick(ActionEvent event) {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("login-view.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/ni/edu/uam/aplicacionregistro/login-view.fxml"));
             Parent root = loader.load();
 
             Stage login = new Stage();
