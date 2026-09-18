@@ -12,10 +12,10 @@ Aplicación de escritorio desarrollada para la asignatura **Programación de Apl
 
 | Nombre Integrante | Rol / Función Desarrollada |
 | :--- | :--- |
-| **[  ]** | Diseño de interfaces (.fxml) en Scene Builder y diseño visual. |
-| **[ ]** | Controladores (`LoginController`, `MenuController`) y manejo de eventos (`ActionEvent`, `KeyEvent`). |
-| **[  ]** | Controladores (`RegistroController`, `ConsultaController`) y gestión de `FileChooser`/`DirectoryChooser`. |
-| **[ ]** | Lógica de modelos, gestión de memoria (lista de clientes) y paso de datos entre controladores. |
+| **[Jose Cristo Carvallo ]** | Diseño de interfaces (.fxml) en Scene Builder y diseño visual. |
+| **[Gabriela Ezpinoza]** | Controladores (`LoginController`, `MenuController`) y manejo de eventos (`ActionEvent`, `KeyEvent`). |
+| **[ Fabiola Lanuza ]** | Controladores (`RegistroController`, `ConsultaController`) y gestión de `FileChooser`/`DirectoryChooser`. |
+| **[Jesy Gonzales]** | Lógica de modelos, gestión de memoria (lista de clientes) y paso de datos entre controladores. |
 
 ---
 
