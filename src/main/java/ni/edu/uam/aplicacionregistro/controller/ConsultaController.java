@@ -53,7 +53,7 @@ public class ConsultaController implements Initializable {
 
         private void abrirDetalle(Cliente cliente) {
             try {
-                FXMLLoader loader = new FXMLLoader(getClass().getResource("detalle-view.fxml"));
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/ni/edu/uam/aplicacionregistro/detalle-view.fxml"));
                 Parent root = loader.load();
 
                 DetalleController controller = loader.getController();
