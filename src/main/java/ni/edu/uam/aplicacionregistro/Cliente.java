@@ -20,5 +20,7 @@ public class Cliente {
     private List<String> serviciosInteres;
     private String rutaFoto;
 
-
+    public String getNombreCompleto() {
+        return nombres + " " + apellidos;
+    }
 }

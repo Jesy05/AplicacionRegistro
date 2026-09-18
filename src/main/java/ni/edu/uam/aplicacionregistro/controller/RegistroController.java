@@ -21,6 +21,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import java.util.ResourceBundle;
+import ni.edu.uam.aplicacionregistro.Cliente;
 
 public class RegistroController implements Initializable {
 
@@ -103,7 +104,7 @@ public class RegistroController implements Initializable {
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("Registro exitoso");
         alert.setHeaderText(null);
-        alert.setContentText("El cliente " + cliente.getNombres() + " " + cliente.getApellidos() + " fue registrado correctamente.");
+        alert.setContentText("El cliente " + cliente.getNombreCompleto() + " fue registrado correctamente.");
         alert.showAndWait();
 
         limpiarFormulario();
